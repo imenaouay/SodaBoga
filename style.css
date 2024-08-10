@@ -19,6 +19,9 @@ html,body{
     width: 100%;
 }
 
+body::-webkit-scrollbar{
+    display:none
+}
 #main{
     width: 100%;
     height: 100vh;
@@ -32,6 +35,7 @@ nav{
     justify-content:space-between;
     height: 10vh;
     padding: 0vw 10vw;
+    z-index: 99;
 }
 
 nav a , i{
@@ -68,6 +72,7 @@ nav i{
     position: absolute;
     width: 31%;
     z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #cercleBerry{
@@ -76,6 +81,7 @@ nav i{
     left: 32%;
     width: 15%;
     z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #manyberry{
@@ -84,6 +90,7 @@ nav i{
     z-index: 3;
     top: 55%;
     right: 32%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf{
@@ -92,6 +99,7 @@ nav i{
     transform: rotate(60deg);
     position: absolute;
     width: 10%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf02{
@@ -107,6 +115,7 @@ nav i{
     left:75%;
     position: absolute;
     width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf3{
@@ -173,9 +182,9 @@ nav i{
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
     width: 25vw;
-    height: 80vh;
+    height: 70vh;
     margin-top: 10vh;
     border-radius: 20px;
     background-color: #fff;
@@ -207,6 +216,8 @@ nav i{
     position:absolute;
     width: 25%;
 }
-#lemon{
+.lemon{
+    position:absolute;
+    top: -2%;
     width: 25vw;
 }
