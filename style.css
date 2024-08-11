@@ -221,3 +221,35 @@ nav i{
     top: -2%;
     width: 25vw;
 }
+.four {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(45, 0, 51), #a105b0);
+}
+
+.lft-four, .rght-four {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+    height: 100%;
+}
+
+.lft-four img {
+    width: 85%;
+}
+
+
+.rght-four h1 {
+    color: #fff;
+    font-size: 6vw;
+}
+
+.rght-four p {
+    font-size: 1vw;
+    color: #fff;
+    width: 75%;
+}
